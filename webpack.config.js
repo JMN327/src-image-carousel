@@ -5,13 +5,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
-  experiments: {
+  // put this in when linking for package testing:
+  /* experiments: {
     outputModule: true,
-  },
+  }, */
   output: {
-    library: {
+/*     library: {
       type: "module",
-    },
+    }, */
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
